@@ -11,32 +11,78 @@ body {
     h1 {
         color:#1a41d6
     }
+
     nav{
         background-color:black;
         margin: 4px;
         text-align: center;
     }
-    nav ul li{
+    nav ul li {
         list-style-type: none ;
         color: whitesmoke;
         display: inline-block;
         padding: 14px 12px;
-    
     }
+    nav ul li:hover{
+        background-color: rgb(181,171,174);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
     h2{
         color:#1a41d6
     }
     .card img{
         max-width: 300px;
         margin-left: 420px;
-    
     }
+
     section{
         background-color: white ;
         padding: 4px;
         border-radius: 4px;
         margin: 10px;
     }
+    
     ul li{
         padding: 0;
+    }
+
+    .overview{
+        max-width: 500px;
+        border-radius: 5px;
+        display: block;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo{
+        max-width: 150px;
+    }
+
+    .curriculum-container{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .curriculum-item{
+        background-color: #f7f7f7;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33%-20%);
+        padding: 6px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    .curriculum-item h3{
+        color: #0046B5;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .curriculum-item p{
+        font-size: 14px;
+        color: #555;
     }
