@@ -29,7 +29,7 @@ body {
     }
     
     h1 {
-        color:#1a41d6
+        color: #1a41d6
     }
 
     nav{
@@ -52,8 +52,8 @@ body {
         color: white;
     }
 
-    h2{
-        color:#1a41d6
+    h2 {
+        color: black;
     }
     .card img{
         max-width: 300px;
@@ -106,4 +106,50 @@ body {
     .curriculum-item p{
         font-size: 14px;
         color: #555;
+    }
+
+    .program-overview {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        color: black;
+    }
+    
+    .program-overview h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color:black;
+    }
+    
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        gap: 10px;
+        margin-left: 4%;
+    }
+    
+    .overview-item {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      background-color: #c4cad1;
+      color: rgb(40, 12, 222);
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      font-size: 15px;
+      clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    }
+    .overview-item:nth-child(odd) {
+      margin-top: 50px; /* Adjust to stagger odd-numbered pentagons */
+    }
+    .overview-item b{
+      padding: 10px;
+    }
+    .overview-item:hover {
+        transform: scale(1.05);
+        background-color: yellow;
     }
