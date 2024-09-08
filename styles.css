@@ -1,13 +1,33 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f4f4;
+    margin: 0;
+    padding: 0;
     }
-    body >header{
-        background-color: white;
-    }
-    header{
+
+    header {
+        background-color: rgb(50, 48, 48);
+        padding: 100px;
         text-align: center;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png");
+        background-size: cover; /* Ensures the image covers the entire header */
+        background-position: center; /* Centers the image in the header */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        color: rgb(39, 38, 38) /* Example text color to stand out against the image */
     }
+    header p{
+        color: white;
+    }
+    header h1{
+        color: white;
+    }
+    header button{
+        background-color: blue;
+        color: white;
+        height: 45px;
+        width: 130px;
+    }
+    
     h1 {
         color:#1a41d6
     }
@@ -24,7 +44,7 @@ body {
         padding: 14px 12px;
     }
     nav ul li:hover{
-        background-color: rgb(181,171,174);
+        background-color: blue;
     }
 
     nav ul li a {
@@ -65,20 +85,21 @@ body {
     .curriculum-container{
         display: flex;
         justify-content: center;
-        gap: 25px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
     }
     .curriculum-item{
-        background-color: #f7f7f7;
-        border-radius: 3px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        flex: 1 1 calc(33.33% - 20px);
-        max-width: calc(33.33%-20%);
-        padding: 6px;
+        width: calc(16.66% - 20%);
+        flex: 1 1 calc(33.33% - 20%);
+        padding: 2px;
         text-align: center;
-        transition: transform 0.3s ease;
     }
     .curriculum-item h3{
-        color: #0046B5;
+        color: #0044df;
         font-size: 18px;
         margin-bottom: 20px;
     }
