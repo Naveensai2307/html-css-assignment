@@ -78,6 +78,20 @@ body {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
+
+    .video-container {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    
+    .video-container iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: none;
+        border-radius: 8px;
+    }
+
     .logo{
         max-width: 150px;
     }
@@ -153,3 +167,43 @@ body {
         transform: scale(1.05);
         background-color: yellow;
     }
+
+    /* General Footer Styling */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center; /* Center-align text and icons */
+}
+
+/* Footer Text Styling */
+footer p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size for footer text */
+    line-height: 1.5;
+}
+
+/* Social Media Icons Container */
+.social-media {
+    margin-top: 10px; /* Space between footer text and icons */
+}
+
+/* Individual Social Media Icon Styling */
+.social-icon {
+    margin: 0 10px; /* Horizontal spacing between icons */
+    color: #fff; /* White color for icons */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 24px; /* Adjust icon size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+}
+
+.social-icon:hover {
+    color: #ddd; /* Light color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Font Awesome Icon Styling */
+.fa-brands {
+    display: inline-block; /* Ensure icons are displayed inline */
+    vertical-align: middle; /* Align icons with text */
+}
