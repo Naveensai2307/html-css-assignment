@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, p, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+}
+
+/* Center the main content and add a background color */
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form section */
+.form-section {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(73, 128, 0, 0.644);
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style form inputs and textareas */
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration-color: black;
+}
+
+/* Style the file input */
+input[type="file"] {
+    border: none;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: None;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
